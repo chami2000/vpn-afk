@@ -1,0 +1,21 @@
+name: VLESS Test
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"   # every 12 hours
+  workflow_dispatch:         # allow manual run
+
+jobs:
+  run-vless:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Make run.sh executable
+        run: chmod +x run.sh
+
+      - name: Run VLESS test
+        run: |
+          ./run.sh "vless://092c28fa-9044-41fc-a279-47d8de7931ac@p4.443.pp.ua:47967?type=ws&path=%2F&host=&security=tls&fp=&alpn=&allowInsecure=1#test"
