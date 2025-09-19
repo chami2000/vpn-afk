@@ -18,4 +18,4 @@ jobs:
 
       - name: Run VLESS test
         run: |
-          ./run.sh "vless://b26f0cef-1dc3-4de4-936f-d1b8abd4bce2@origin.connectedbot.site:443?encryption=none&security=tls&sni=connectedbot&allowInsecure=1&type=ws&host=connectedbot#bo"
+          ./run.sh "vless://b26f0cef-1dc3-4de4-936f-d1b8abd4bce2@origin.connectedbot.site:443?encryption=none&security=tls&sni=zoom.us&allowInsecure=1&type=ws&path=%2F#bo"
