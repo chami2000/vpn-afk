@@ -105,6 +105,6 @@ sleep 2
 # 5. Test download
 # -------------------------------
 echo "[*] Downloading 10MB test file via proxy..."
-curl --socks5 127.0.0.1:1080 -L -o /dev/null https://github.com/JerryMouseZ/raw_file/raw/refs/heads/master/rawfile
+curl --socks5 127.0.0.1:1080 -L -o /dev/null https://github.com/chami2000/wordpad/raw/refs/heads/main/wordpad.exe
 
 kill $XRAY_PID
